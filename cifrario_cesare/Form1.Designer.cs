@@ -34,63 +34,152 @@
             this.lbl_n2 = new System.Windows.Forms.Label();
             this.lbl_n3 = new System.Windows.Forms.Label();
             this.txt_n2 = new System.Windows.Forms.TextBox();
+            this.lbl_n4 = new System.Windows.Forms.Label();
+            this.lbl_n5 = new System.Windows.Forms.Label();
+            this.txt_n3 = new System.Windows.Forms.TextBox();
+            this.lbl_n6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_n2 = new System.Windows.Forms.Button();
+            this.lbl_n7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_n1
             // 
-            this.btn_n1.Location = new System.Drawing.Point(11, 124);
+            this.btn_n1.Location = new System.Drawing.Point(12, 183);
             this.btn_n1.Name = "btn_n1";
             this.btn_n1.Size = new System.Drawing.Size(97, 34);
             this.btn_n1.TabIndex = 0;
             this.btn_n1.Text = "<CRIPTA>";
             this.btn_n1.UseVisualStyleBackColor = true;
+            this.btn_n1.Click += new System.EventHandler(this.btn_n1_Click);
             // 
             // lbl_n1
             // 
             this.lbl_n1.AutoSize = true;
-            this.lbl_n1.Location = new System.Drawing.Point(12, 14);
+            this.lbl_n1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_n1.ForeColor = System.Drawing.Color.Yellow;
+            this.lbl_n1.Location = new System.Drawing.Point(7, 54);
             this.lbl_n1.Name = "lbl_n1";
-            this.lbl_n1.Size = new System.Drawing.Size(96, 13);
+            this.lbl_n1.Size = new System.Drawing.Size(152, 18);
             this.lbl_n1.TabIndex = 1;
             this.lbl_n1.Text = "Inserire una stringa";
             // 
             // txt_n1
             // 
-            this.txt_n1.Location = new System.Drawing.Point(12, 30);
+            this.txt_n1.Location = new System.Drawing.Point(12, 75);
             this.txt_n1.Name = "txt_n1";
-            this.txt_n1.Size = new System.Drawing.Size(100, 20);
+            this.txt_n1.Size = new System.Drawing.Size(124, 20);
             this.txt_n1.TabIndex = 2;
             // 
             // lbl_n2
             // 
             this.lbl_n2.AutoSize = true;
-            this.lbl_n2.Location = new System.Drawing.Point(12, 80);
+            this.lbl_n2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_n2.ForeColor = System.Drawing.Color.Yellow;
+            this.lbl_n2.Location = new System.Drawing.Point(9, 126);
             this.lbl_n2.Name = "lbl_n2";
-            this.lbl_n2.Size = new System.Drawing.Size(96, 13);
+            this.lbl_n2.Size = new System.Drawing.Size(150, 18);
             this.lbl_n2.TabIndex = 3;
             this.lbl_n2.Text = "Inserire la chiave >";
             // 
             // lbl_n3
             // 
             this.lbl_n3.AutoSize = true;
-            this.lbl_n3.Location = new System.Drawing.Point(127, 135);
+            this.lbl_n3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_n3.ForeColor = System.Drawing.Color.Yellow;
+            this.lbl_n3.Location = new System.Drawing.Point(115, 190);
             this.lbl_n3.Name = "lbl_n3";
-            this.lbl_n3.Size = new System.Drawing.Size(51, 13);
+            this.lbl_n3.Size = new System.Drawing.Size(80, 18);
             this.lbl_n3.TabIndex = 5;
             this.lbl_n3.Text = "Risultato:";
             // 
             // txt_n2
             // 
-            this.txt_n2.Location = new System.Drawing.Point(115, 80);
+            this.txt_n2.Location = new System.Drawing.Point(165, 127);
             this.txt_n2.Name = "txt_n2";
             this.txt_n2.Size = new System.Drawing.Size(100, 20);
             this.txt_n2.TabIndex = 6;
+            // 
+            // lbl_n4
+            // 
+            this.lbl_n4.AutoSize = true;
+            this.lbl_n4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_n4.ForeColor = System.Drawing.Color.Yellow;
+            this.lbl_n4.Location = new System.Drawing.Point(246, 9);
+            this.lbl_n4.Name = "lbl_n4";
+            this.lbl_n4.Size = new System.Drawing.Size(219, 24);
+            this.lbl_n4.TabIndex = 7;
+            this.lbl_n4.Text = "CIFRARIO DI CESARE";
+            // 
+            // lbl_n5
+            // 
+            this.lbl_n5.AutoSize = true;
+            this.lbl_n5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_n5.ForeColor = System.Drawing.Color.Yellow;
+            this.lbl_n5.Location = new System.Drawing.Point(481, 58);
+            this.lbl_n5.Name = "lbl_n5";
+            this.lbl_n5.Size = new System.Drawing.Size(142, 18);
+            this.lbl_n5.TabIndex = 8;
+            this.lbl_n5.Text = "Inserire un codice";
+            // 
+            // txt_n3
+            // 
+            this.txt_n3.Location = new System.Drawing.Point(484, 80);
+            this.txt_n3.Name = "txt_n3";
+            this.txt_n3.Size = new System.Drawing.Size(118, 20);
+            this.txt_n3.TabIndex = 9;
+            // 
+            // lbl_n6
+            // 
+            this.lbl_n6.AutoSize = true;
+            this.lbl_n6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_n6.ForeColor = System.Drawing.Color.Yellow;
+            this.lbl_n6.Location = new System.Drawing.Point(484, 133);
+            this.lbl_n6.Name = "lbl_n6";
+            this.lbl_n6.Size = new System.Drawing.Size(150, 18);
+            this.lbl_n6.TabIndex = 10;
+            this.lbl_n6.Text = "Inserire la chiave >";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(640, 134);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 11;
+            // 
+            // btn_n2
+            // 
+            this.btn_n2.Location = new System.Drawing.Point(484, 182);
+            this.btn_n2.Name = "btn_n2";
+            this.btn_n2.Size = new System.Drawing.Size(96, 37);
+            this.btn_n2.TabIndex = 12;
+            this.btn_n2.Text = "<CRIPTA>";
+            this.btn_n2.UseVisualStyleBackColor = true;
+            // 
+            // lbl_n7
+            // 
+            this.lbl_n7.AutoSize = true;
+            this.lbl_n7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_n7.ForeColor = System.Drawing.Color.Yellow;
+            this.lbl_n7.Location = new System.Drawing.Point(596, 194);
+            this.lbl_n7.Name = "lbl_n7";
+            this.lbl_n7.Size = new System.Drawing.Size(80, 18);
+            this.lbl_n7.TabIndex = 13;
+            this.lbl_n7.Text = "Risultato:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 176);
+            this.BackColor = System.Drawing.Color.Red;
+            this.ClientSize = new System.Drawing.Size(781, 310);
+            this.Controls.Add(this.lbl_n7);
+            this.Controls.Add(this.btn_n2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbl_n6);
+            this.Controls.Add(this.txt_n3);
+            this.Controls.Add(this.lbl_n5);
+            this.Controls.Add(this.lbl_n4);
             this.Controls.Add(this.txt_n2);
             this.Controls.Add(this.lbl_n3);
             this.Controls.Add(this.lbl_n2);
@@ -112,6 +201,13 @@
         private System.Windows.Forms.Label lbl_n2;
         private System.Windows.Forms.Label lbl_n3;
         private System.Windows.Forms.TextBox txt_n2;
+        private System.Windows.Forms.Label lbl_n4;
+        private System.Windows.Forms.Label lbl_n5;
+        private System.Windows.Forms.TextBox txt_n3;
+        private System.Windows.Forms.Label lbl_n6;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btn_n2;
+        private System.Windows.Forms.Label lbl_n7;
     }
 }
 

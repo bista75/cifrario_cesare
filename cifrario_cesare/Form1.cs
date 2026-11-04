@@ -16,5 +16,26 @@ namespace cifrario_cesare
         {
             InitializeComponent();
         }
+
+        private void btn_n1_Click(object sender, EventArgs e)
+        {
+            string Stringa = txt_n1.Text;
+            string chiave = txt_n2.Text;
+
+            if (string.IsNullOrWhiteSpace(Stringa) || string.IsNullOrWhiteSpace(chiave))
+            {
+                MessageBox.Show("Attenzione! Scrivere sui text box",
+                    "Errore di compilazione",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+            }
+            else
+            {
+                int[] conta = new int[26];
+
+
+            }
+
+        }
     }
 }
