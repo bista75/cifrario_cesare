@@ -20,9 +20,9 @@ namespace cifrario_cesare
         private void btn_n1_Click(object sender, EventArgs e)
         {
             string Stringa = txt_n1.Text;
-            string chiave = txt_n2.Text;
+            int chiave = Convert.ToInt32(txt_n2.Text));
 
-            if (string.IsNullOrWhiteSpace(Stringa) || string.IsNullOrWhiteSpace(chiave))
+            if (string.IsNullOrWhiteSpace(Stringa))
             {
                 MessageBox.Show("Attenzione! Scrivere sui text box",
                     "Errore di compilazione",
@@ -31,9 +31,15 @@ namespace cifrario_cesare
             }
             else
             {
-                int[] conta = new int[26];
-
-
+                char[] risultato = Stringa.ToCharArray();
+                for(int i = 0; i < 26; i++)
+                {
+                    char c = risultato[i];
+                    if (c >= 'A' && c <= 'Z')
+                    {
+                        risultato[i] = (char)('A' + (c - 'A' + chiave) % 26);
+                    }
+                }
             }
 
         }
