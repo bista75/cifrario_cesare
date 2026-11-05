@@ -36,6 +36,7 @@ namespace cifrario_cesare
 
             else
             {
+                chiave = chiave % 26;
                 char[] risultato = Stringa.ToCharArray();
                 for (int i = 0; i < Stringa.Length; i++)
                 {
@@ -72,13 +73,14 @@ namespace cifrario_cesare
             }
             else
             {
+                chiave = chiave % 26;
                 char[] risultato = Stringa.ToCharArray();
                 for (int i = 0; i < Stringa.Length; i++)
                 {
                     char c = risultato[i];
                     if (c >= 'A' && c <= 'Z')
                     {
-                        risultato[i] = (char)('A' + (c - 'A' - chiave+26) % 26);
+                        risultato[i] = (char)('A' + (c - 'A' - chiave + 26) % 26);
                     }
                     else if(c >= 'a' && c <= 'z')
                     {
