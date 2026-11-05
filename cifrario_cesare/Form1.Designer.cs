@@ -87,7 +87,7 @@
             this.lbl_n3.AutoSize = true;
             this.lbl_n3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_n3.ForeColor = System.Drawing.Color.Yellow;
-            this.lbl_n3.Location = new System.Drawing.Point(115, 190);
+            this.lbl_n3.Location = new System.Drawing.Point(115, 182);
             this.lbl_n3.Name = "lbl_n3";
             this.lbl_n3.Size = new System.Drawing.Size(80, 18);
             this.lbl_n3.TabIndex = 5;
@@ -172,7 +172,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
-            this.ClientSize = new System.Drawing.Size(781, 310);
+            this.ClientSize = new System.Drawing.Size(781, 243);
             this.Controls.Add(this.lbl_n7);
             this.Controls.Add(this.btn_n2);
             this.Controls.Add(this.textBox1);
