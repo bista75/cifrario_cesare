@@ -38,16 +38,16 @@
             this.lbl_n5 = new System.Windows.Forms.Label();
             this.txt_n3 = new System.Windows.Forms.TextBox();
             this.lbl_n6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_n4 = new System.Windows.Forms.TextBox();
             this.btn_n2 = new System.Windows.Forms.Button();
             this.lbl_n7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_n1
             // 
-            this.btn_n1.Location = new System.Drawing.Point(12, 183);
+            this.btn_n1.Location = new System.Drawing.Point(12, 182);
             this.btn_n1.Name = "btn_n1";
-            this.btn_n1.Size = new System.Drawing.Size(97, 34);
+            this.btn_n1.Size = new System.Drawing.Size(97, 37);
             this.btn_n1.TabIndex = 0;
             this.btn_n1.Text = "<CRIPTA>";
             this.btn_n1.UseVisualStyleBackColor = true;
@@ -87,7 +87,7 @@
             this.lbl_n3.AutoSize = true;
             this.lbl_n3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_n3.ForeColor = System.Drawing.Color.Yellow;
-            this.lbl_n3.Location = new System.Drawing.Point(115, 182);
+            this.lbl_n3.Location = new System.Drawing.Point(115, 194);
             this.lbl_n3.Name = "lbl_n3";
             this.lbl_n3.Size = new System.Drawing.Size(80, 18);
             this.lbl_n3.TabIndex = 5;
@@ -140,21 +140,22 @@
             this.lbl_n6.TabIndex = 10;
             this.lbl_n6.Text = "Inserire la chiave >";
             // 
-            // textBox1
+            // txt_n4
             // 
-            this.textBox1.Location = new System.Drawing.Point(640, 134);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 11;
+            this.txt_n4.Location = new System.Drawing.Point(640, 134);
+            this.txt_n4.Name = "txt_n4";
+            this.txt_n4.Size = new System.Drawing.Size(100, 20);
+            this.txt_n4.TabIndex = 11;
             // 
             // btn_n2
             // 
             this.btn_n2.Location = new System.Drawing.Point(484, 182);
             this.btn_n2.Name = "btn_n2";
-            this.btn_n2.Size = new System.Drawing.Size(96, 37);
+            this.btn_n2.Size = new System.Drawing.Size(106, 37);
             this.btn_n2.TabIndex = 12;
             this.btn_n2.Text = "<CRIPTA>";
             this.btn_n2.UseVisualStyleBackColor = true;
+            this.btn_n2.Click += new System.EventHandler(this.btn_n2_Click);
             // 
             // lbl_n7
             // 
@@ -175,7 +176,7 @@
             this.ClientSize = new System.Drawing.Size(781, 243);
             this.Controls.Add(this.lbl_n7);
             this.Controls.Add(this.btn_n2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_n4);
             this.Controls.Add(this.lbl_n6);
             this.Controls.Add(this.txt_n3);
             this.Controls.Add(this.lbl_n5);
@@ -205,7 +206,7 @@
         private System.Windows.Forms.Label lbl_n5;
         private System.Windows.Forms.TextBox txt_n3;
         private System.Windows.Forms.Label lbl_n6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_n4;
         private System.Windows.Forms.Button btn_n2;
         private System.Windows.Forms.Label lbl_n7;
     }

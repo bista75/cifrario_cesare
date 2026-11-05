@@ -19,7 +19,7 @@ namespace cifrario_cesare
 
         private void btn_n1_Click(object sender, EventArgs e)
         {
-            string Stringa = txt_n1.Text.ToUpper();
+            string Stringa = txt_n1.Text;
             
 
             if (string.IsNullOrWhiteSpace(Stringa))
@@ -42,10 +42,50 @@ namespace cifrario_cesare
                     char c = risultato[i];
                     if (c >= 'A' && c <= 'Z')
                     {
-                        risultato[i] = (char)('A' + (c - 'A' + chiave) % 26);
+                        risultato[i] = (char)('A' + (c - 'A' + chiave+26) % 26);
+                    }
+                    else if (c >= 'a' && c <= 'z')
+                    {
+                        risultato[i] = (char)('a' + (c - 'a' + chiave + 26) % 26);
                     }
                 }
                 lbl_n3.Text = new string(risultato);
+            }
+
+        }
+
+        private void btn_n2_Click(object sender, EventArgs e)
+        {
+            string Stringa = txt_n3.Text;
+
+
+            if (string.IsNullOrEmpty(Stringa))
+            {
+                MessageBox.Show("Attenzione! Scrivere sui text box");
+                return;
+
+            }
+            if (!int.TryParse(txt_n4.Text, out int chiave))
+            {
+                MessageBox.Show("Inserisci un numero valido come chiave");
+                return;
+            }
+            else
+            {
+                char[] risultato = Stringa.ToCharArray();
+                for (int i = 0; i < Stringa.Length; i++)
+                {
+                    char c = risultato[i];
+                    if (c >= 'A' && c <= 'Z')
+                    {
+                        risultato[i] = (char)('A' + (c - 'A' - chiave+26) % 26);
+                    }
+                    else if(c >= 'a' && c <= 'z')
+                    {
+                        risultato[i] = (char)('a' + (c - 'a' - chiave + 26) % 26);
+                    }
+                }
+                lbl_n7.Text = new string(risultato);
             }
 
         }
