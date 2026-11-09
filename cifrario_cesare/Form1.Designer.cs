@@ -108,7 +108,7 @@
             this.lbl_n3.AutoSize = true;
             this.lbl_n3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_n3.ForeColor = System.Drawing.Color.Yellow;
-            this.lbl_n3.Location = new System.Drawing.Point(115, 194);
+            this.lbl_n3.Location = new System.Drawing.Point(9, 222);
             this.lbl_n3.Name = "lbl_n3";
             this.lbl_n3.Size = new System.Drawing.Size(80, 18);
             this.lbl_n3.TabIndex = 5;
@@ -183,7 +183,7 @@
             this.lbl_n7.AutoSize = true;
             this.lbl_n7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_n7.ForeColor = System.Drawing.Color.Yellow;
-            this.lbl_n7.Location = new System.Drawing.Point(379, 197);
+            this.lbl_n7.Location = new System.Drawing.Point(267, 222);
             this.lbl_n7.Name = "lbl_n7";
             this.lbl_n7.Size = new System.Drawing.Size(80, 18);
             this.lbl_n7.TabIndex = 13;
@@ -293,13 +293,14 @@
             this.btn_n3.TabIndex = 24;
             this.btn_n3.Text = "<CRIPTA>";
             this.btn_n3.UseVisualStyleBackColor = true;
+            this.btn_n3.Click += new System.EventHandler(this.btn_n3_Click);
             // 
             // lbl_n10
             // 
             this.lbl_n10.AutoSize = true;
             this.lbl_n10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_n10.ForeColor = System.Drawing.Color.Yellow;
-            this.lbl_n10.Location = new System.Drawing.Point(620, 201);
+            this.lbl_n10.Location = new System.Drawing.Point(517, 228);
             this.lbl_n10.Name = "lbl_n10";
             this.lbl_n10.Size = new System.Drawing.Size(80, 18);
             this.lbl_n10.TabIndex = 25;
@@ -379,13 +380,14 @@
             this.btn_n4.TabIndex = 33;
             this.btn_n4.Text = "<CRIPTA>";
             this.btn_n4.UseVisualStyleBackColor = true;
+            this.btn_n4.Click += new System.EventHandler(this.btn_n4_Click);
             // 
             // lbl_n13
             // 
             this.lbl_n13.AutoSize = true;
             this.lbl_n13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_n13.ForeColor = System.Drawing.Color.Yellow;
-            this.lbl_n13.Location = new System.Drawing.Point(861, 201);
+            this.lbl_n13.Location = new System.Drawing.Point(758, 228);
             this.lbl_n13.Name = "lbl_n13";
             this.lbl_n13.Size = new System.Drawing.Size(80, 18);
             this.lbl_n13.TabIndex = 34;
@@ -396,7 +398,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
-            this.ClientSize = new System.Drawing.Size(958, 243);
+            this.ClientSize = new System.Drawing.Size(958, 255);
             this.Controls.Add(this.lbl_n13);
             this.Controls.Add(this.btn_n4);
             this.Controls.Add(this.txt_n8);

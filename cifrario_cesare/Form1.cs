@@ -91,5 +91,15 @@ namespace cifrario_cesare
             }
 
         }
+
+        private void btn_n3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_n4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
