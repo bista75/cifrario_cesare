@@ -41,6 +41,9 @@
             this.txt_n4 = new System.Windows.Forms.TextBox();
             this.btn_n2 = new System.Windows.Forms.Button();
             this.lbl_n7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_n1
@@ -105,7 +108,7 @@
             this.lbl_n4.AutoSize = true;
             this.lbl_n4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_n4.ForeColor = System.Drawing.Color.Yellow;
-            this.lbl_n4.Location = new System.Drawing.Point(246, 9);
+            this.lbl_n4.Location = new System.Drawing.Point(246, 20);
             this.lbl_n4.Name = "lbl_n4";
             this.lbl_n4.Size = new System.Drawing.Size(219, 24);
             this.lbl_n4.TabIndex = 7;
@@ -168,12 +171,45 @@
             this.lbl_n7.TabIndex = 13;
             this.lbl_n7.Text = "Risultato:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(346, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(36, 55);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "|";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(346, 110);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 55);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "|";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(346, 165);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 55);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "|";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
-            this.ClientSize = new System.Drawing.Size(781, 243);
+            this.ClientSize = new System.Drawing.Size(758, 243);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_n7);
             this.Controls.Add(this.btn_n2);
             this.Controls.Add(this.txt_n4);
@@ -209,6 +245,9 @@
         private System.Windows.Forms.TextBox txt_n4;
         private System.Windows.Forms.Button btn_n2;
         private System.Windows.Forms.Label lbl_n7;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
