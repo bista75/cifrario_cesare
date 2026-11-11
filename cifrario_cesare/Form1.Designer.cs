@@ -174,7 +174,7 @@
             this.btn_n2.Name = "btn_n2";
             this.btn_n2.Size = new System.Drawing.Size(106, 37);
             this.btn_n2.TabIndex = 12;
-            this.btn_n2.Text = "<CRIPTA>";
+            this.btn_n2.Text = "<DECRIPTA>";
             this.btn_n2.UseVisualStyleBackColor = true;
             this.btn_n2.Click += new System.EventHandler(this.btn_n2_Click);
             // 
@@ -274,9 +274,9 @@
             this.lbl_n9.ForeColor = System.Drawing.Color.Yellow;
             this.lbl_n9.Location = new System.Drawing.Point(517, 129);
             this.lbl_n9.Name = "lbl_n9";
-            this.lbl_n9.Size = new System.Drawing.Size(150, 18);
+            this.lbl_n9.Size = new System.Drawing.Size(149, 18);
             this.lbl_n9.TabIndex = 22;
-            this.lbl_n9.Text = "Inserire la chiave >";
+            this.lbl_n9.Text = "Inserire la parola >";
             // 
             // txt_n6
             // 
@@ -343,9 +343,9 @@
             this.lbl_n11.ForeColor = System.Drawing.Color.Yellow;
             this.lbl_n11.Location = new System.Drawing.Point(758, 54);
             this.lbl_n11.Name = "lbl_n11";
-            this.lbl_n11.Size = new System.Drawing.Size(152, 18);
+            this.lbl_n11.Size = new System.Drawing.Size(142, 18);
             this.lbl_n11.TabIndex = 29;
-            this.lbl_n11.Text = "Inserire una stringa";
+            this.lbl_n11.Text = "Inserire un codice";
             // 
             // txt_n7
             // 
@@ -361,9 +361,9 @@
             this.lbl_n12.ForeColor = System.Drawing.Color.Yellow;
             this.lbl_n12.Location = new System.Drawing.Point(755, 126);
             this.lbl_n12.Name = "lbl_n12";
-            this.lbl_n12.Size = new System.Drawing.Size(150, 18);
+            this.lbl_n12.Size = new System.Drawing.Size(149, 18);
             this.lbl_n12.TabIndex = 31;
-            this.lbl_n12.Text = "Inserire la chiave >";
+            this.lbl_n12.Text = "Inserire la parola >";
             // 
             // txt_n8
             // 
@@ -378,7 +378,7 @@
             this.btn_n4.Name = "btn_n4";
             this.btn_n4.Size = new System.Drawing.Size(97, 37);
             this.btn_n4.TabIndex = 33;
-            this.btn_n4.Text = "<CRIPTA>";
+            this.btn_n4.Text = "<DECRIPTA>";
             this.btn_n4.UseVisualStyleBackColor = true;
             this.btn_n4.Click += new System.EventHandler(this.btn_n4_Click);
             // 
