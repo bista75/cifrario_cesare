@@ -15,6 +15,7 @@ namespace cifrario_cesare
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void btn_n1_Click(object sender, EventArgs e)
