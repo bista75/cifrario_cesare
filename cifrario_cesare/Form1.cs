@@ -113,7 +113,7 @@ namespace cifrario_cesare
             else
             {
                 string risultato = "";
-                testo = testo.ToUpper();
+                
                 chiave = chiave.ToUpper();
 
 
@@ -138,10 +138,19 @@ namespace cifrario_cesare
                     int spostamento = letteraChiave - 'A';
                     char nuovaLettera = (char)(letteraTesto + spostamento);
 
-
-                    if (nuovaLettera > 'Z')
+                    if (char.IsUpper(letteraTesto))
                     {
-                        nuovaLettera = (char)(nuovaLettera - 26);
+                        if (nuovaLettera > 'Z')
+                        {
+                            nuovaLettera = (char)(nuovaLettera - 26);
+                        }
+                    }
+                    else if (char.IsLower(letteraTesto))
+                    {
+                        if (nuovaLettera > 'z')
+                        {
+                            nuovaLettera = (char)(nuovaLettera - 26);
+                        }
                     }
 
                     risultato += nuovaLettera;
@@ -186,7 +195,7 @@ namespace cifrario_cesare
             else
             {
                 string risultato = "";
-                testo = testo.ToUpper();
+               
                 chiave = chiave.ToUpper();
 
 
@@ -211,10 +220,19 @@ namespace cifrario_cesare
                     int spostamento = letteraChiave - 'A';
                     char nuovaLettera = (char)(letteraTesto - spostamento);
 
-
-                    if (nuovaLettera < 'A')
+                    if (char.IsUpper(letteraTesto))
                     {
-                        nuovaLettera = (char)(nuovaLettera + 26);
+                        if (nuovaLettera < 'A')
+                        {
+                            nuovaLettera = (char)(nuovaLettera + 26);
+                        }
+                    }
+                    else if (char.IsLower(letteraTesto))
+                    {
+                        if (nuovaLettera < 'a')
+                        {
+                            nuovaLettera = (char)(nuovaLettera + 26);
+                        }
                     }
 
                     risultato += nuovaLettera;
