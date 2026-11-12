@@ -94,11 +94,147 @@ namespace cifrario_cesare
 
         private void btn_n3_Click(object sender, EventArgs e)
         {
+            string testo = txt_n5.Text, chiave;
+            chiave = txt_n6.Text;
 
+
+            if (string.IsNullOrEmpty(testo))
+            {
+                MessageBox.Show("Attenzione! Scrivere sui text box");
+                return;
+
+            }
+            if (string.IsNullOrEmpty(chiave))
+            {
+                MessageBox.Show("Inserisci una parola valida come chiave");
+                return;
+            }
+            else
+            {
+                string risultato = "";
+                testo = testo.ToUpper();
+                chiave = chiave.ToUpper();
+
+
+                int iTesto = 0;
+                int iChiave = 0;
+
+
+                int lunghezzaMassima = Math.Max(testo.Length, chiave.Length);
+
+                for (int i = 0; i < lunghezzaMassima; i++)
+                {
+                    char letteraTesto = testo[iTesto];
+                    char letteraChiave = chiave[iChiave];
+
+                    if (letteraTesto == ' ')
+                    {
+                        risultato += ' ';
+                        iTesto++;
+                        if (iTesto == testo.Length) iTesto = 0;
+                        continue; 
+                    }
+                    int spostamento = letteraChiave - 'A';
+                    char nuovaLettera = (char)(letteraTesto + spostamento);
+
+
+                    if (nuovaLettera > 'Z')
+                    {
+                        nuovaLettera = (char)(nuovaLettera - 26);
+                    }
+
+                    risultato += nuovaLettera;
+
+                    iTesto++;
+                    iChiave++;
+
+
+                    if (iTesto == testo.Length)
+                    {
+                        iTesto = 0;
+                    }
+
+                    if (iChiave == chiave.Length)
+                    {
+                        iChiave = 0;
+                    }
+                }
+
+                lbl_n10.Text = risultato;
+            }
         }
 
         private void btn_n4_Click(object sender, EventArgs e)
         {
+
+            string testo = txt_n7.Text, chiave;
+            chiave = txt_n8.Text;
+
+
+            if (string.IsNullOrEmpty(testo))
+            {
+                MessageBox.Show("Attenzione! Scrivere sui text box");
+                return;
+
+            }
+            if (string.IsNullOrEmpty(chiave))
+            {
+                MessageBox.Show("Inserisci una parola valida come chiave");
+                return;
+            }
+            else
+            {
+                string risultato = "";
+                testo = testo.ToUpper();
+                chiave = chiave.ToUpper();
+
+
+                int iTesto = 0;
+                int iChiave = 0;
+
+
+                int lunghezzaMassima = Math.Max(testo.Length, chiave.Length);
+
+                for (int i = 0; i < lunghezzaMassima; i++)
+                {
+                    char letteraTesto = testo[iTesto];
+                    char letteraChiave = chiave[iChiave];
+
+                    if (letteraTesto == ' ')
+                    {
+                        risultato += ' ';
+                        iTesto++;
+                        if (iTesto == testo.Length) iTesto = 0;
+                        continue;
+                    }
+                    int spostamento = letteraChiave - 'A';
+                    char nuovaLettera = (char)(letteraTesto - spostamento);
+
+
+                    if (nuovaLettera < 'A')
+                    {
+                        nuovaLettera = (char)(nuovaLettera + 26);
+                    }
+
+                    risultato += nuovaLettera;
+
+                    iTesto++;
+                    iChiave++;
+
+
+                    if (iTesto == testo.Length)
+                    {
+                        iTesto = 0;
+                    }
+
+                    if (iChiave == chiave.Length)
+                    {
+                        iChiave = 0;
+                    }
+                }
+
+                lbl_n13.Text = risultato;
+            }
 
         }
     }
